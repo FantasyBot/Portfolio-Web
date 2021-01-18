@@ -20,24 +20,37 @@ body{
   margin: 30px 0 0 140px;
   font-size: 1.2rem;
   color: white;
+  background: transparent;
+  overflow: hidden;
 }
+
 .header .info h2{
   margin-bottom: 5px;
 }
+
+ .info h1, .info h2, .info p{
+  transform: translateX(-100%);
+  display: inline-block;
+ }
 .simbol-wrap{
   display: flex;
   flex-direction: column;
   margin: 30px 0px 0 0;
   color: white;
   width: 50%;
+  background: transparent;
+  overflow: hidden;
 
 }
 .simbol-wrap h3{ 
   font-size: 1.3rem;
+  transform: translateX(100%);
+  display: inline-block;
 }
 .simbols{
   display: flex;
   flex-wrap: wrap;
+  transform: translateX(100%);
 }
 .simbols .i{
   display: flex;

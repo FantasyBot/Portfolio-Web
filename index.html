@@ -97,6 +97,7 @@
   src="https://code.jquery.com/jquery-3.5.1.js"
   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
   crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
   <script src="JS/tilt.jquery.js"></script>
   <script type="text/javascript">
         $(document).ready(function() {
@@ -106,6 +107,14 @@
 
           })
     })
+    //css animation
+    const tl = gsap.timeline({defaults: { ease: "power1.out"} });
+
+    tl.to("h1, h2, p, h3, .simbols", {x: '0%', duration: 1.5 });
+
+    tl.fromTo('h1, h2, p, h3, .simbols', {opacity: 0}, {opacity: 1, duration: 2 }, '-=1');
+    tl.fromTo('.single-box', {opacity: 0}, {opacity: 1, duration: 1 }, '-=1.7');
+
   </script>
 </body>
 </html>
