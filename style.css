@@ -5,7 +5,7 @@
 }
 
 body{
-  background: rgb(69, 75, 69);
+  background: rgb(59, 59, 66);
   margin: 0 auto;
 }
 .header{
@@ -225,4 +225,5 @@ body{
       width: 260px;
       height: 130px;
     }
+
   }
