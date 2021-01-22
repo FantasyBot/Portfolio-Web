@@ -147,7 +147,7 @@ body{
     background: linear-gradient(0deg, #300d0d, transparent);
   }  
   .single-box:nth-child(6) .content{
-    background: linear-gradient(0deg, #287032, transparent);
+    background: linear-gradient(0deg, #0f0f0f, transparent);
   }
 
   @media(max-width: 1300px) {
